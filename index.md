@@ -8,7 +8,7 @@
 - 【終了】2020年05月：お絵描きツールをつくってみよう！
 
 ### プリント
-- PCN山形米沢
+- [PCN山形米沢](https://online.pcn-ymgt-yonezawa.club/print/)
 - [IchigoJamプリント](https://ichigojam.github.io/print/ja/index.html)
 
 ### オンライン講座参加の準備
