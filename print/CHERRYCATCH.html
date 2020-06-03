@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>さくらんぼキャッチゲームbyPCN山形米沢</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>さくらんぼキャッチゲーム - IchigoJam by PCN山形米沢</h1>
+
+<section>
+1. じぶんとうじょう("0"をすきな文字にかえてみよう)
+<div id="cherrycatch-1"></div>
+<script>make15("cherrycatch-1", f2s(function() {/*
+20 CLS:X=16:Y=20
+130 LC X,Y:?"0"
+*/}))</script>
+</section>
+
+<section>
+2. さくらんぼとステージをつくろう！
+<div id="cherrycatch-2"></div>
+<script>make15("cherrycatch-2", f2s(function() {/*
+30 FOR I=0 TO 31:LC I,0:?"c":LC I,21:?"_":NEXT
+*/}))</script>
+<b>やってみよう！</b><br>
+・じぶん、さくらんぼ、ステージをかえてみよう！<br>
+</section>
+
+★続きは6/10(水)公開！お楽しみに★<br>
+
+<!-- <section>
+3. じぶんをうごかしてみよう！<br>
+<div id="cherrycatch-3"></div>
+<script>make15("cherrycatch-3", f2s(function() {/*
+100 K=INKEY()
+110 X=X-(K==LEFT)+(K==RIGHT)
+130 LC X,Y:?"🕴"
+160 GOTO100
+*/}))</script>
+</section>
+
+<section>
+4. 分身しないようにしよう<br>
+<div id="cherrycatch-4"></div>
+<script>make15("cherrycatch-4", f2s(function() {/*
+90 LC X,Y:?" "
+160 GOTO90
+*/}))</script>
+</section>
+
+<section>
+5. さくらんぼを落とそう<br>
+<div id="cherrycatch-5"></div>
+<script>make15("cherrycatch-5", f2s(function() {/*
+20 CLS:X=16:Y=20:A=10:V=0
+60 LC A,V+1:?"c"
+70 V=V+1
+160 GOTO60
+*/}))</script>
+</section> -->
+
+<!-- <a href=https://fukuno.jig.jp/app/IchigoJam/#10%20CLS%3AX%3D16%3AY%3D10%3AP%3DASC(%22A%22)%0A15%20COPY%20%23900%2C%23E00%2C512%0A20%20LC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A30%20LC8%2C0%3A%3F%22X%3A%22%3BX%3B%22%2C%20Y%3A%22%3BY%3B%22%20%22%0A40%20K%3DINKEY()%0A45%20IF%20K%3D%3D0%20LC%20X%2CY%3A%3FCHR%24(1)%3AWAIT5%3AGOTO100%0A50%20IF%20K%3D%3D28%20X%3DX-1%0A60%20IF%20K%3D%3D30%20Y%3DY-1%0A70%20IF%20K%3D%3D29%20X%3DX%2B1%0A80%20IF%20K%3D%3D31%20Y%3DY%2B1%0A81%20IF%20X%3E31%20X%3D0%20ELSE%20IF%20X%3C0%20X%3D31%0A82%20IF%20Y%3E22%20Y%3D0%20ELSE%20IF%20Y%3C0%20Y%3D22%0A85%20IF%20K%3C28%20OR%20K%3E31%20GOTO90%20ELSE%20GOTO100%0A90%20P%3DK%3ALC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A100%20LC%20X%2CY%3A%3FCHR%24(P)%0A105%20IF%20K%3D%3D10%20COPY%23E00%2C%23900%2C512%3ASAVE%0A110%20WAIT5%3AGOTO30%0A>IchigoJam webで表示</a> -->
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
