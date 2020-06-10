@@ -11,4 +11,10 @@ YRC（山形市理科教育センター）のページとなります。
 - 【第4回】ロボットを制御してみよう
 - 【第5回】プログラミングを利用して水溶液の性質を調べてみよう
 
+### リンク
+- [山形市理科教育センター](https://www.ymgt.ed.jp/rikacenter/YAMAGATASIRISE.html)
+- [PCN山形米沢Facebookページ](https://www.facebook.com/PCNYonezawa/)  
+  ワークショップ情報など発信しています
+
 ### Q&A
+    準備中

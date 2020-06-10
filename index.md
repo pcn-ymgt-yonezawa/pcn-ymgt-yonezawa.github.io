@@ -13,4 +13,9 @@
 
 ### オンライン講座参加の準備
 
+### リンク
+- [PCN山形米沢Facebookページ](https://www.facebook.com/PCNYonezawa/)  
+  ワークショップ情報など発信しています
+
 ### Q&A
+    準備中
