@@ -55,44 +55,44 @@
 */}))</script>
 </section>
 
-<a href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AA%3D10%3AV%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20V%3DV%2B1%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A160%20GOTO60%0A>ここまでIchigoJam webで表示</a>
+<a target="_blank" href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AA%3D10%3AV%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20V%3DV%2B1%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A160%20GOTO60%0A>ここまでIchigoJam webで表示</a>
 
 <section>
 6. じめんをつきぬけるバグを直そう！<br>
-<!-- <div id="cherrycatch-6"></div>
+<div id="cherrycatch-6"></div>
 <script>make15("cherrycatch-6", f2s(function() {/*
 80 IF V==21 V=0:GOTO30
-*/}))</script> -->
+*/}))</script>
 </section>
 
 <section>
 7. さくらんぼの残像（ざんぞう）も直そう！<br>
-<!-- <div id="cherrycatch-7"></div>
+<div id="cherrycatch-7"></div>
 <script>make15("cherrycatch-7", f2s(function() {/*
 70 LC A,V:?" ":V=V+1
-*/}))</script> -->
+*/}))</script>
 </section>
 
 <section>
 8. キャッチ判定とキャッチしたさんくらんぼ表示をつけるぞ！<br>
-<!-- <div id="cherrycatch-8"></div>
+<div id="cherrycatch-8"></div>
 <script>make15("cherrycatch-8", f2s(function() {/*
 20 CLS:X=16:Y=20:V=0:S=0
 140 IF SCR(X,Y-1)==ASC("c") S=S+1
 150 LC 0,22:?"SCORE:";S
-*/}))</script> -->
+*/}))</script>
 </section>
 
 <section>
 9. キャッチするさくらんぼを増やすぞ～！<br>
-<!-- <div id="cherrycatch-9"></div>
+<div id="cherrycatch-9"></div>
 <script>make15("cherrycatch-9", f2s(function() {/*
 20 CLS:X=16:Y=20:V=0:S=0:W=0
 40 A=RND(32):IF SCR(A,0)==ASC(" ") CONT
 50 W=W+1:IF W==32 END
 80 IF V==21 V=0:GOTO40
 160 GOTO50
-*/}))</script> -->
+*/}))</script>
 </section>
 
 <section>
