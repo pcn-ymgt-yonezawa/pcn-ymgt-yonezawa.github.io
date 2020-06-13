@@ -13,7 +13,8 @@ YRC（山形市理科教育センター）のページとなります。
 ### 復習用プリント&スライド
 
 - 【第 1 回】プログラミングの基礎を学ぼう  
-   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf)をみながら改造して自分だけのかわくだりゲームにしてみよう！
+   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf)をみながら改造して自分だけのかわくだりゲームにしてみよう！  
+   ※IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJam/)でプログラミングできるよ！
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01.html)
   - [しくみへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01logic.html)
 - 【第 2 回】LED を制御していろいろな色のライトをつけてみよう
