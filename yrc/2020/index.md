@@ -5,16 +5,15 @@
 本ページは令和 2 年度のプログラミングキッズクラブ  
 YRC（山形市理科教育センター）のページとなります。
 
-復習するときは、
+**復習するときは、**
 
-1. スライドをみながら IchigoDyhook でプログラミング！  
-   スライドは下にあるよ！
-2. プログラムがどんな"いみ"か気になったら「しくみへん」をみてみよう！
+1. スライドをみながら IchigoDyhook でプログラミング！**スライドは下にあるよ！**
+2. プログラムが**どんな"いみ"か**気になったら「しくみへん」をみてみよう！\*\*
 
 ### 復習用プリント&スライド
 
 - 【第 1 回】プログラミングの基礎を学ぼう  
-   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf) をみながら改造して自分だけのかわくだりゲームにしてみよう！
+   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf)をみながら改造して自分だけのかわくだりゲームにしてみよう！
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01.html)
   - [しくみへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01logic.html)
 - 【第 2 回】LED を制御していろいろな色のライトをつけてみよう
@@ -34,7 +33,7 @@ YRC（山形市理科教育センター）のページとなります。
 
 ### お問い合わせ
 
-IchigoDyhook, プログラムの質問は[PCN 山形米沢 とも](mailto:t-shikanai@symphodia.co.jp?subject=[PKC2020質問])まで
+コンピュータ, プログラムの質問は[こちら](https://forms.gle/zTkj7jYU6FphiCTp9)から
 
 ### Q&A
 
