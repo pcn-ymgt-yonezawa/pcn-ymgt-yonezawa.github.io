@@ -7,32 +7,85 @@
 <h1>フルカラーLEDの制御 - IchigoDyhook@PCN山形米沢</h1>
 
 <section>
-１．点灯をいろいろためしてみよう<br>
+じっけん１．光をまぜてみよう！<br>
 <div id="fullcolorled-1"></div>
 <script>make15("fullcolorled-1", f2s(function() {/*
-OUT2,1
-OUT3,1
-OUT4,1
+NEW
+10 OUT2,BTN(LEFT)
+20 OUT3,BTN(DOWN)
+30 OUT4,BTN(RIGHT)
+40 GOTO10
 */}))</script>
-<table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
-  <tr>
-    <th>コマンド</th>
+  <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+    <tr>
+      <th width="200px">やじるし（色）</th>
       <th>結果（色）</th>
-  </tr>
-  <tr>
-    <td>OUT2,1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>OUT3,1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>OUT4,1</td>
-    <td></td>
-  </tr>
-</table>
+    </tr>
+    <tr>
+      <td>赤(←) + 青(→)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>赤(←) + 緑(↓)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>青(→) + 緑(↓)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>赤(←) + 緑(↓) + 青(→)</td>
+      <td></td>
+    </tr>
+  </table>
 </section>
+
+<section>
+じっけん２．好きな色を作ってみよう！<br>
+「0~2000」のところは、自分で数字をちょうせつしてみよう！
+<div id="fullcolorled-2"></div>
+<script>make15("fullcolorled-2", f2s(function() {/*
+NEW
+10 PWM2,0~2000
+20 PWM3,0~2000
+30 PWM4,0~2000
+*/}))</script>
+    <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+      <tr>
+        <th colspan="3">光のつよさ</th>
+        <th rowspan="2">つくった色</th>
+      </tr>
+      <tr>
+        <th width="100px">PWM2</th>
+        <th width="100px">PWM3</th>
+        <th width="100px">PWM4</th>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>2000</td>
+        <td>2000</td>
+        <td>(例)白</td>
+      </tr>
+      <tr>
+        <td>　</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>　</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>　</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
 <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
