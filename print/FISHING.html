@@ -1,51 +1,58 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
-<title>魚釣りゲームbyPCN山形米沢</title>
-<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
-<script src="ichigojamlist.js"></script>
-</head><body>
+<!DOCTYPE html>
+<html>
 
-<h1>魚釣りゲーム - IchigoJam by PCN山形米沢</h1>
+<head>
+    <meta charset="utf-8">
+    <title>魚釣りゲームbyPCN山形米沢</title>
+    <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+    <script src="ichigojamlist.js"></script>
+    <script type="text/javascript" src="/js/gtag.js"></script>
+</head>
 
-<section>
-1. さかな登場
-<div id="fishing-1"></div>
-<script>make15("fishing-1", f2s(function() {/*
+<body>
+
+    <h1>魚釣りゲーム - IchigoJam by PCN山形米沢</h1>
+
+    <section>
+        1. さかな登場
+        <div id="fishing-1"></div>
+        <script>make15("fishing-1", f2s(function () {/*
 10 CLS:X=RND(32):Y=RND(22)
 30 LC X,Y:?CHR$(5):WAIT10
 */}))</script>
-</section>
+    </section>
 
-<section>
-2. さかなランダム移動
-<div id="fishing-2"></div>
-<script>make15("fishing-2", f2s(function() {/*
+    <section>
+        2. さかなランダム移動
+        <div id="fishing-2"></div>
+        <script>make15("fishing-2", f2s(function () {/*
 70 X=X+RND(2)-RND(2)
 90 Y=Y+RND(2)-RND(2)
 150 WAIT5:GOTO30
 */}))</script>
-</section>
+    </section>
 
-<section>
-3. さかなの残像を消そう<br>
-<div id="fishing-3"></div>
-<script>make15("fishing-3", f2s(function() {/*
+    <section>
+        3. さかなの残像を消そう<br>
+        <div id="fishing-3"></div>
+        <script>make15("fishing-3", f2s(function () {/*
 50 LC X,Y:?" "
 */}))</script>
-</section>
+    </section>
 
-<section>
-4. 魚の移動範囲を制限<br>
-<div id="fishing-4"></div>
-<script>make15("fishing-4", f2s(function() {/*
+    <section>
+        4. 魚の移動範囲を制限<br>
+        <div id="fishing-4"></div>
+        <script>make15("fishing-4", f2s(function () {/*
 110 IF X<0 X=0 ELSE IF X>32 X=32
 120 IF Y<0 Y=0 ELSE IF Y>22 Y=22
 */}))</script>
-</section>
+    </section>
 
-<section>
-5. 魚2匹目登場<br>
-<div id="fishing-5"></div>
-<script>make15("fishing-5", f2s(function() {/*
+    <section>
+        5. 魚2匹目登場<br>
+        <div id="fishing-5"></div>
+        <script>make15("fishing-5", f2s(function () {/*
 20 A=RND(32):B=RND(22)
 40 LC A,B:?CHR$(6):WAIT10
 60 LC A,B:?" "
@@ -54,10 +61,15 @@
 130 IF A<0 A=0 ELSE IF A>32 A=32
 140 IF B<0 B=0 ELSE IF B>22 B=22
 */}))</script>
-</section>
+    </section>
 
-<a target="_blank" href=https://fukuno.jig.jp/app/IchigoJam/#10%20CLS%3AX%3DRND(32)%3AY%3DRND(22)%0A20%20A%3DRND(32)%3AB%3DRND(22)%0A30%20LC%20X%2CY%3A%3FCHR%24(5)%3AWAIT10%0A40%20LC%20A%2CB%3A%3FCHR%24(6)%3AWAIT10%0A50%20LC%20X%2CY%3A%3F%22%20%22%0A60%20LC%20A%2CB%3A%3F%22%20%22%0A70%20X%3DX%2BRND(2)-RND(2)%0A80%20A%3DA%2BRND(2)-RND(2)%0A90%20Y%3DY%2BRND(2)-RND(2)%0A100%20B%3DB%2BRND(2)-RND(2)%0A110%20IF%20X%3C0%20X%3D0%20ELSE%20IF%20X%3E32%20X%3D32%0A120%20IF%20Y%3C0%20Y%3D0%20ELSE%20IF%20Y%3E22%20Y%3D22%0A130%20IF%20A%3C0%20A%3D0%20ELSE%20IF%20A%3E32%20A%3D32%0A140%20IF%20B%3C0%20B%3D0%20ELSE%20IF%20B%3E22%20B%3D22%0A150%20WAIT5%3AGOTO30%0A>ここまでIchigoJam webで表示</a>
+    <a target="_blank"
+        href=https://fukuno.jig.jp/app/IchigoJam/#10%20CLS%3AX%3DRND(32)%3AY%3DRND(22)%0A20%20A%3DRND(32)%3AB%3DRND(22)%0A30%20LC%20X%2CY%3A%3FCHR%24(5)%3AWAIT10%0A40%20LC%20A%2CB%3A%3FCHR%24(6)%3AWAIT10%0A50%20LC%20X%2CY%3A%3F%22%20%22%0A60%20LC%20A%2CB%3A%3F%22%20%22%0A70%20X%3DX%2BRND(2)-RND(2)%0A80%20A%3DA%2BRND(2)-RND(2)%0A90%20Y%3DY%2BRND(2)-RND(2)%0A100%20B%3DB%2BRND(2)-RND(2)%0A110%20IF%20X%3C0%20X%3D0%20ELSE%20IF%20X%3E32%20X%3D32%0A120%20IF%20Y%3C0%20Y%3D0%20ELSE%20IF%20Y%3E22%20Y%3D22%0A130%20IF%20A%3C0%20A%3D0%20ELSE%20IF%20A%3E32%20A%3D32%0A140%20IF%20B%3C0%20B%3D0%20ELSE%20IF%20B%3E22%20B%3D22%0A150%20WAIT5%3AGOTO30%0A>ここまでIchigoJam
+        webで表示</a>
 
-<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
-<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
-</body></html>
+    <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
+            href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+        <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+
+</html>

@@ -1,110 +1,124 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
-<title>さくらんぼキャッチゲームbyPCN山形米沢</title>
-<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
-<script src="ichigojamlist.js"></script>
-</head><body>
+<!DOCTYPE html>
+<html>
 
-<h1>さくらんぼキャッチゲーム - IchigoJam by PCN山形米沢</h1>
+<head>
+    <meta charset="utf-8">
+    <title>さくらんぼキャッチゲームbyPCN山形米沢</title>
+    <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+    <script src="ichigojamlist.js"></script>
+    <script type="text/javascript" src="/js/gtag.js"></script>
+</head>
 
-<section>
-1. じぶんとうじょう("0"をすきな文字にかえてみよう)
-<div id="cherrycatch-1"></div>
-<script>make15("cherrycatch-1", f2s(function() {/*
+<body>
+
+    <h1>さくらんぼキャッチゲーム - IchigoJam by PCN山形米沢</h1>
+
+    <section>
+        1. じぶんとうじょう("0"をすきな文字にかえてみよう)
+        <div id="cherrycatch-1"></div>
+        <script>make15("cherrycatch-1", f2s(function () {/*
 20 CLS:X=16:Y=20
 130 LC X,Y:?"0"
 */}))</script>
-</section>
+    </section>
 
-<section>
-2. さくらんぼとステージをつくろう！
-<div id="cherrycatch-2"></div>
-<script>make15("cherrycatch-2", f2s(function() {/*
+    <section>
+        2. さくらんぼとステージをつくろう！
+        <div id="cherrycatch-2"></div>
+        <script>make15("cherrycatch-2", f2s(function () {/*
 30 FOR I=0 TO 31:LC I,0:?"c":LC I,21:?"_":NEXT
 */}))</script>
-<b>やってみよう！</b><br>
-・じぶん、さくらんぼ、ステージをかえてみよう！<br>
-</section>
+        <b>やってみよう！</b><br>
+        ・じぶん、さくらんぼ、ステージをかえてみよう！<br>
+    </section>
 
-<section>
-3. じぶんをうごかしてみよう！<br>
-<div id="cherrycatch-3"></div>
-<script>make15("cherrycatch-3", f2s(function() {/*
+    <section>
+        3. じぶんをうごかしてみよう！<br>
+        <div id="cherrycatch-3"></div>
+        <script>make15("cherrycatch-3", f2s(function () {/*
 100 K=INKEY()
 110 X=X-(K==LEFT)+(K==RIGHT)
 160 GOTO100
 */}))</script>
-</section>
+    </section>
 
-<section>
-4. 分身しないようにしよう<br>
-<div id="cherrycatch-4"></div>
-<script>make15("cherrycatch-4", f2s(function() {/*
+    <section>
+        4. 分身しないようにしよう<br>
+        <div id="cherrycatch-4"></div>
+        <script>make15("cherrycatch-4", f2s(function () {/*
 90 LC X,Y:?" "
 160 GOTO90
 */}))</script>
-</section>
+    </section>
 
-<section>
-5. さくらんぼを落とそう<br>
-<div id="cherrycatch-5"></div>
-<script>make15("cherrycatch-5", f2s(function() {/*
+    <section>
+        5. さくらんぼを落とそう<br>
+        <div id="cherrycatch-5"></div>
+        <script>make15("cherrycatch-5", f2s(function () {/*
 20 CLS:X=16:Y=20:A=10:V=0
 60 LC A,V+1:?"c"
 70 V=V+1
 160 GOTO60
 */}))</script>
-</section>
+    </section>
 
-<a target="_blank" href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AA%3D10%3AV%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20V%3DV%2B1%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A160%20GOTO60%0A>ここまでIchigoJam webで表示</a>
+    <a target="_blank"
+        href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AA%3D10%3AV%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20V%3DV%2B1%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A160%20GOTO60%0A>ここまでIchigoJam
+        webで表示</a>
 
-<section>
-6. じめんをつきぬけるバグを直そう！<br>
-<div id="cherrycatch-6"></div>
-<script>make15("cherrycatch-6", f2s(function() {/*
+    <section>
+        6. じめんをつきぬけるバグを直そう！<br>
+        <div id="cherrycatch-6"></div>
+        <script>make15("cherrycatch-6", f2s(function () {/*
 80 IF V==21 V=0:GOTO60
 */}))</script>
-</section>
+    </section>
 
-<section>
-7. さくらんぼの残像（ざんぞう）も直そう！<br>
-<div id="cherrycatch-7"></div>
-<script>make15("cherrycatch-7", f2s(function() {/*
+    <section>
+        7. さくらんぼの残像（ざんぞう）も直そう！<br>
+        <div id="cherrycatch-7"></div>
+        <script>make15("cherrycatch-7", f2s(function () {/*
 70 LC A,V:?" ":V=V+1
 */}))</script>
-</section>
+    </section>
 
-<section>
-8. キャッチ判定とキャッチしたさんくらんぼ表示をつけるぞ！<br>
-<div id="cherrycatch-8"></div>
-<script>make15("cherrycatch-8", f2s(function() {/*
+    <section>
+        8. キャッチ判定とキャッチしたさんくらんぼ表示をつけるぞ！<br>
+        <div id="cherrycatch-8"></div>
+        <script>make15("cherrycatch-8", f2s(function () {/*
 20 CLS:X=16:Y=20:V=0:S=0
 140 IF SCR(X,Y-1)==ASC("c") S=S+1
 150 LC 0,22:?"SCORE:";S
 */}))</script>
-</section>
+    </section>
 
-<section>
-9. キャッチするさくらんぼを増やすぞ～！<br>
-<div id="cherrycatch-9"></div>
-<script>make15("cherrycatch-9", f2s(function() {/*
+    <section>
+        9. キャッチするさくらんぼを増やすぞ～！<br>
+        <div id="cherrycatch-9"></div>
+        <script>make15("cherrycatch-9", f2s(function () {/*
 20 CLS:X=16:Y=20:V=0:S=0:W=0
 40 A=RND(32):IF SCR(A,0)==ASC(" ") CONT
 50 W=W+1:IF W==32 END
 80 IF V==21 V=0:GOTO40
 160 GOTO60
 */}))</script>
-</section>
+    </section>
 
-<a target="_blank" href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AV%3D0%3AS%3D0%3AW%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A40%20A%3DRND(32)%3AIF%20SCR(A%2C0)%3D%3DASC(%22%20%22)%20CONT%0A50%20W%3DW%2B1%3AIF%20W%3D%3D32%20END%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20LC%20A%2CV%3A%3F%22%20%22%3AV%3DV%2B1%0A80%20IF%20V%3D%3D21%20V%3D0%3AGOTO40%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A140%20IF%20SCR(X%2CY-1)%3D%3DASC(%22c%22)%20S%3DS%2B1%0A150%20LC%200%2C22%3A%3F%22SCORE%3A%22%3BS%0A160%20GOTO60%0A>ここまでIchigoJam webで表示</a>
+    <a target="_blank"
+        href=https://fukuno.jig.jp/app/IchigoJam/#20%20CLS%3AX%3D16%3AY%3D20%3AV%3D0%3AS%3D0%3AW%3D0%0A30%20FOR%20I%3D0%20TO%2031%3ALC%20I%2C0%3A%3F%22c%22%3ALC%20I%2C21%3A%3F%22_%22%3ANEXT%0A40%20A%3DRND(32)%3AIF%20SCR(A%2C0)%3D%3DASC(%22%20%22)%20CONT%0A50%20W%3DW%2B1%3AIF%20W%3D%3D32%20END%0A60%20LC%20A%2CV%2B1%3A%3F%22c%22%0A70%20LC%20A%2CV%3A%3F%22%20%22%3AV%3DV%2B1%0A80%20IF%20V%3D%3D21%20V%3D0%3AGOTO40%0A90%20LC%20X%2CY%3A%3F%22%20%22%0A100%20K%3DINKEY()%0A110%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20LC%20X%2CY%3A%3F%220%22%0A140%20IF%20SCR(X%2CY-1)%3D%3DASC(%22c%22)%20S%3DS%2B1%0A150%20LC%200%2C22%3A%3F%22SCORE%3A%22%3BS%0A160%20GOTO60%0A>ここまでIchigoJam
+        webで表示</a>
 
-<section>
-10. もっとさくらんぼっぽくしたい！<br>
-<div id="cherrycatch-10"></div>
-<script>make15("cherrycatch-10", f2s(function() {/*
+    <section>
+        10. もっとさくらんぼっぽくしたい！<br>
+        <div id="cherrycatch-10"></div>
+        <script>make15("cherrycatch-10", f2s(function () {/*
 10 POKE 236*8,#E0,#38,#24,#26,#69,#99,#96,#60
 */}))</script>
-</section>
+    </section>
 
-<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
-<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
-</body></html>
+    <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
+            href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+        <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+
+</html>

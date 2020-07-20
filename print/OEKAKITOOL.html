@@ -1,48 +1,55 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
-<title>お絵描きツールbyPCN山形米沢</title>
-<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
-<script src="ichigojamlist.js"></script>
-</head><body>
+<!DOCTYPE html>
+<html>
 
-<h1>お絵描きツール - IchigoJam by PCN山形米沢</h1>
+<head>
+    <meta charset="utf-8">
+    <title>お絵描きツールbyPCN山形米沢</title>
+    <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+    <script src="ichigojamlist.js"></script>
+    <script type="text/javascript" src="/js/gtag.js"></script>
+</head>
 
-<section>
-ペンとうじょう（"A"にすきな文字をいれてね）
-<div id="oekaki-1"></div>
-<script>make15("oekaki-1", f2s(function() {/*
+<body>
+
+    <h1>お絵描きツール - IchigoJam by PCN山形米沢</h1>
+
+    <section>
+        ペンとうじょう（"A"にすきな文字をいれてね）
+        <div id="oekaki-1"></div>
+        <script>make15("oekaki-1", f2s(function () {/*
 10 CLS:X=16:Y=10:P=ASC("A")
 100 LC X,Y:?CHR$(P)
 */}))</script>
-</section>
+    </section>
 
-<section>
-カーソルでうごかせるようにする（まずは「ひだり」と「うえ」）
-<div id="oekaki-2"></div>
-<script>make15("oekaki-2", f2s(function() {/*
+    <section>
+        カーソルでうごかせるようにする（まずは「ひだり」と「うえ」）
+        <div id="oekaki-2"></div>
+        <script>make15("oekaki-2", f2s(function () {/*
 40 K=INKEY()
 50 IF K==28 X=X-1
 60 IF K==30 Y=Y-1
 110 GOTO40
 */}))</script>
-<b>やってみよう！</b><br>
-1. ペンを「みぎ」、「した」もうごかせるようにしてみよう<br>
-<div id="oekaki-3"></div>
-<script>make15("oekaki-3", f2s(function() {/*
+        <b>やってみよう！</b><br>
+        1. ペンを「みぎ」、「した」もうごかせるようにしてみよう<br>
+        <div id="oekaki-3"></div>
+        <script>make15("oekaki-3", f2s(function () {/*
 70 IF K==29 X=X+1
 80 IF K==31 Y=Y+1
 */}))</script>
-<!-- <b>ヒント</b><br>
+        <!-- <b>ヒント</b><br>
 ・Kが28で「ひだり」、Kがいくつのとき「みぎ」になるかな？<br>
 ・XとYはがめんにでてくるペンの場所<br>
 <br> -->
 
-2. ペンの文字をいろいろかえてみよう<br>
-<div id="oekaki-4"></div>
-<script>make15("oekaki-4", f2s(function() {/*
+        2. ペンの文字をいろいろかえてみよう<br>
+        <div id="oekaki-4"></div>
+        <script>make15("oekaki-4", f2s(function () {/*
 10 CLS:X=16:Y=10:P=236
 */}))</script>
 
-<!-- 【上級編】<br>
+        <!-- 【上級編】<br>
 3. ペンを「ななめ」にもうごかしてみよう<br>
 <div id="oekaki-4"></div>
 <script>make15("oekaki-4", f2s(function() {/*
@@ -51,55 +58,60 @@
 4. 将棋の「桂馬」のうごき、できるかな？<br>
 </section> -->
 
-<section>
-<b>かいぞうしてみよう！</b><br>
-・ペンがいどうできる場所を制限してみよう<br>
-<div id="oekaki-5"></div>
-<script>make15("oekaki-5", f2s(function() {/*
+        <section>
+            <b>かいぞうしてみよう！</b><br>
+            ・ペンがいどうできる場所を制限してみよう<br>
+            <div id="oekaki-5"></div>
+            <script>make15("oekaki-5", f2s(function () {/*
 81 IF X>31 X=0 ELSE IF X<0 X=31
 82 IF Y>22 Y=0 ELSE IF Y<0 Y=22
 */}))</script>
-・お絵描きしながらペンの文字を変える機能をつけてみよう<br>
-<div id="oekaki-6"></div>
-<script>make15("oekaki-6", f2s(function() {/*
+            ・お絵描きしながらペンの文字を変える機能をつけてみよう<br>
+            <div id="oekaki-6"></div>
+            <script>make15("oekaki-6", f2s(function () {/*
 45 IF K==0 GOTO100
 85 IF K<28 OR K>31 GOTO90 ELSE GOTO100
 90 P=K
 110 WAIT5:GOTO40
 */}))</script>
-・ペンの場所を画面に数字で出力してみよう<br>
-<div id="oekaki-7"></div>
-<script>make15("oekaki-7", f2s(function() {/*
+            ・ペンの場所を画面に数字で出力してみよう<br>
+            <div id="oekaki-7"></div>
+            <script>make15("oekaki-7", f2s(function () {/*
 20 LC0,0:?"PEN:";CHR$(P)
 30 LC8,0:?"X:";X;", Y:";Y;" "
 90 P=K:LC0,0:?"PEN:";CHR$(P)
 110 WAIT5:GOTO30
 */}))</script>
-<!-- ・「消しゴム」機能をつけてみよう<br>
+            <!-- ・「消しゴム」機能をつけてみよう<br>
 ・「全消し」機能をつけてみよう<br> -->
-・絵の保存機能をつけてみよう
-<div id="oekaki-8"></div>
-<script>make15("oekaki-8", f2s(function() {/*
+            ・絵の保存機能をつけてみよう
+            <div id="oekaki-8"></div>
+            <script>make15("oekaki-8", f2s(function () {/*
 15 COPY #900,#E00,512
 105 IF K==10 COPY#E00,#900,512:SAVE
 */}))</script>
 
-・カーソルを表示しよう
-<div id="oekaki-9"></div>
-<script>make15("oekaki-9", f2s(function() {/*
+            ・カーソルを表示しよう
+            <div id="oekaki-9"></div>
+            <script>make15("oekaki-9", f2s(function () {/*
 45 IF K==0 LC X,Y:?CHR$(1):WAIT5:GOTO100
 */}))</script>
-</section>
+        </section>
 
-<a href=https://fukuno.jig.jp/app/IchigoJam/#10%20CLS%3AX%3D16%3AY%3D10%3AP%3DASC(%22A%22)%0A15%20COPY%20%23900%2C%23E00%2C512%0A20%20LC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A30%20LC8%2C0%3A%3F%22X%3A%22%3BX%3B%22%2C%20Y%3A%22%3BY%3B%22%20%22%0A40%20K%3DINKEY()%0A45%20IF%20K%3D%3D0%20LC%20X%2CY%3A%3FCHR%24(1)%3AWAIT5%3AGOTO100%0A50%20IF%20K%3D%3D28%20X%3DX-1%0A60%20IF%20K%3D%3D30%20Y%3DY-1%0A70%20IF%20K%3D%3D29%20X%3DX%2B1%0A80%20IF%20K%3D%3D31%20Y%3DY%2B1%0A81%20IF%20X%3E31%20X%3D0%20ELSE%20IF%20X%3C0%20X%3D31%0A82%20IF%20Y%3E22%20Y%3D0%20ELSE%20IF%20Y%3C0%20Y%3D22%0A85%20IF%20K%3C28%20OR%20K%3E31%20GOTO90%20ELSE%20GOTO100%0A90%20P%3DK%3ALC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A100%20LC%20X%2CY%3A%3FCHR%24(P)%0A105%20IF%20K%3D%3D10%20COPY%23E00%2C%23900%2C512%3ASAVE%0A110%20WAIT5%3AGOTO30%0A>IchigoJam webで表示</a>
+        <a
+            href=https://fukuno.jig.jp/app/IchigoJam/#10%20CLS%3AX%3D16%3AY%3D10%3AP%3DASC(%22A%22)%0A15%20COPY%20%23900%2C%23E00%2C512%0A20%20LC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A30%20LC8%2C0%3A%3F%22X%3A%22%3BX%3B%22%2C%20Y%3A%22%3BY%3B%22%20%22%0A40%20K%3DINKEY()%0A45%20IF%20K%3D%3D0%20LC%20X%2CY%3A%3FCHR%24(1)%3AWAIT5%3AGOTO100%0A50%20IF%20K%3D%3D28%20X%3DX-1%0A60%20IF%20K%3D%3D30%20Y%3DY-1%0A70%20IF%20K%3D%3D29%20X%3DX%2B1%0A80%20IF%20K%3D%3D31%20Y%3DY%2B1%0A81%20IF%20X%3E31%20X%3D0%20ELSE%20IF%20X%3C0%20X%3D31%0A82%20IF%20Y%3E22%20Y%3D0%20ELSE%20IF%20Y%3C0%20Y%3D22%0A85%20IF%20K%3C28%20OR%20K%3E31%20GOTO90%20ELSE%20GOTO100%0A90%20P%3DK%3ALC0%2C0%3A%3F%22PEN%3A%22%3BCHR%24(P)%0A100%20LC%20X%2CY%3A%3FCHR%24(P)%0A105%20IF%20K%3D%3D10%20COPY%23E00%2C%23900%2C512%3ASAVE%0A110%20WAIT5%3AGOTO30%0A>IchigoJam
+            webで表示</a>
 
-<!-- <section>
+        <!-- <section>
     <b>しらべてみよう！</b><br>
     ・ペンはどこまでうごかせるかな？<br>
     ・CLSコマンド、INKEYコマンドってなんだろう？<br>
     ・ASCコマンド、CHRコマンドってなんだろう？<br>
 </section> -->
 
-<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
-<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
-</body></html>
+        <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
+                href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+            <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+
+</html>
