@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>物の重さを量ってみよう</title>
+<link rel="stylesheet" type="text/css" href="../../../print/ichigojamlist.css">
+<script src="../../../print/ichigojamlist.js"></script>
+</head><body>
+
+<h1>物の重さを量ってみよう - IchigoDyhook@PCN山形米沢</h1>
+
+<section>
+じっけん１．重さをきいてみよう！<br>
+<div id="weight-1"></div>
+<script>make15("weight-1", f2s(function() {/*
+?ANA(2)
+*/}))</script>
+<table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+    <tr>
+      <th></th>
+      <th>1回目</th>
+      <th>2回目</th>
+      <th>3回目</th>
+    </tr>
+    <tr>
+      <td>なにもしない</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>センサを押してるとき</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+れんぞくでひょうじ！
+<div id="weight-1-1"></div>
+<script>make15("weight-1-1", f2s(function() {/*
+NEW
+10 ?ANA(2)
+20 WAIT60
+30 GOTO10
+*/}))</script>
+数字が大きかったら音をならそう！
+<div id="weight-1-2"></div>
+<script>make15("weight-1-2", f2s(function() {/*
+NEW
+10 A=ANA(2):?A
+20 IF A>500 BEEP10,20
+30 WAIT60
+40 GOTO10
+*/}))</script>
+</section>
+
+<br>
+<section>
+じっけん２．グラムの量りにするぞ！<br>
+    <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+      <tr>
+        <th>じょうたい</th>
+        <th>センサの値</th>
+        <th>どれだけ変わった？</th>
+      </tr>
+      <tr>
+        <td>①なにもない</td>
+        <td></td>
+        <td>なし </td>
+      </tr>
+      <tr>
+        <td>②しけんかんだけ</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>③水(2mℓ)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>④水(4mℓ)</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>➄水(6mℓ)</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+<b>20行目のXXXには、どんな数字が入るかな？</b>
+<div id="weight-2">
+</div>
+<script>make15("weight-2", f2s(function() {/*
+10 A=ANA(2)
+20 A=A/XXX:?A;"g"
+30 WAIT60
+40 GOTO10
+*/}))</script>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+</html>
