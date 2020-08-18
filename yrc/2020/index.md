@@ -22,7 +22,10 @@ IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJ
    [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_02.pdf) 
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/02.html)
   - [はってんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/02adv.html)
-- 【第 3 回】プログラミングを利用して物の重さを量ってみよう
+- 【第 3 回】プログラミングを利用して物の重さを量ってみよう  
+   [[スライド(.pdf ファイル) 約 0.5MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_03.pdf) 
+  - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/03.html)
+  - [はってんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/03adv.html)
 - 【第 4 回】ロボットを制御してみよう
 - 【第 5 回】プログラミングを利用して水溶液の性質を調べてみよう
 
