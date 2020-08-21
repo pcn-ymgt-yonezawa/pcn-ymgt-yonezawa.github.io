@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ロボットを制御してみよう</title>
+<link rel="stylesheet" type="text/css" href="../../../print/ichigojamlist.css">
+<script src="../../../print/ichigojamlist.js"></script>
+</head><body>
+
+<h1>ロボットを制御してみよう - IchigoDyhook@PCN山形米沢</h1>
+
+<section>
+1.カムロボで図形を描いてみよう<br>
+<div id="robot-1"></div>
+<script>make15("robot-1", f2s(function() {/*
+10 OUT33:WAIT60
+20 OUT34:WAIT40
+30 GOTO10
+*/}))</script>
+<table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+    <tr>
+      <th>図形</th>
+      <th>進む時間(WAIT)</th>
+      <th>回転する時間(WAIT)</th>
+    </tr>
+    <tr>
+      <td>三角形</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>五角形</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>円</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>星★</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>ハート♡</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>オリジナル図形</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>オリジナル図形</td>
+      <td colspan="2"></td>
+    </tr>
+  </table>
+</section>
+
+<br>
+<section>
+2.距離センサーをつかってみよう<br>
+センサの値と距離の関係を観察しよう
+<div id="robot-2"></div>
+<script>make15("robot-2", f2s(function() {/*
+NEW
+10 A=ANA(2):?A
+20 WAIT30
+30 GOTO10
+*/}))
+</script>
+<table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+  <tr>
+    <th>センサの値</th>
+    <th>距離[cm]</th>
+  </tr>
+  <tr>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+</table>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+</html>
