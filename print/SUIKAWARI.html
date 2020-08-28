@@ -23,11 +23,15 @@
             <p>[変数(アルファベット)の説明]<br>
                 A:スイカの横の位置, B:スイカの縦の位置<br>
                 X:自分の横の位置, Y:自分の縦の位置<br>
+                D:自分の位置からスイカが左右どちらにあるか<br>
+                E:自分の位置からスイカが上下どちらにあるか<br>
             </p>
             [プログラムの説明]
             <p>
-            10 スイカの位置を決める<br>RND(ランダム)でスイカの横と縦の位置をでたらめにするよ<br>
-            20 
+            10 スイカの位置を決める<br><span style="margin-left: 22px;"></span>RND(ランダム)でスイカの横と縦の位置をでたらめにするよ<br>
+            20 自分の位置を決める<br>
+            30 もし、自分とスイカの横の位置が一緒だったら、Dに"〇"を設定して50番へ
+            40 もし、スイカが自分より右にある場合、Dに"→"を設定<br><span style="margin-left: 22px;">スイカが自分より左にある場合、Dに"←"を設定<br>
             </p>
         </div>
     </section>
@@ -35,6 +39,20 @@
     <a target="_blank"
         href=https://fukuno.jig.jp/app/IchigoJam/#10%20A%3DRND(32)%3AB%3DRND(22)%0A20%20CLS%3AX%3D15%3AY%3D10%0A30%20IF%20A%3D%3DX%20D%3D%22%E2%9A%AB%22%3AGOTO50%0A40%20IF%20A%3EX%20D%3D%22%E2%86%92%22%20ELSE%20D%3D%22%E2%86%90%22%0A50%20IF%20B%3D%3DY%20E%3D%22%E2%9A%AB%22%3AGOTO70%0A60%20IF%20B%3EY%20E%3D%22%E2%86%93%22%20ELSE%20E%3D%22%E2%86%91%22%0A70%20LC%20X%2CY%3A%3F%220%22%3AWAIT10%0A80%20LC%20X%2CY%3A%3F%22%20%22%0A90%20K%3DINKEY()%0A100%20IF%20K%3D%3D32%20LC0%2C0%3A%3FSTR%24(D)%3B%22%20%22%3BSTR%24(E)%20ELSE%20GOTO%20120%0A110%20IF%20A%3D%3DX%20AND%20B%3D%3DY%20LC15%2C8%3A%3F%22ATARI%22%3AEND%0A120%20X%3DX-(K%3D%3DLEFT)%2B(K%3D%3DRIGHT)%0A130%20Y%3DY-(K%3D%3DUP)%2B(K%3D%3DDOWN)%0A140%20GOTO30%0A>ここまでIchigoJam
         webで表示</a>
+
+    <h3>スイカ割りゲームを改造してみよう！</h3>
+    <section>
+        <h4>スイカを探した回数を表示しよう</h4>
+    </section>
+    <section>
+        <h4>スイカを叩ける回数を制限（せいげん）してみよう</h4>
+    </section>
+    <section>
+        <h4>スイカをたたいた時に音を鳴らそう</h4>
+    </section>
+    <section>
+        <h4>スイカの絵文字を作ってみよう</h4>
+    </section>
 
     <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
             href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
