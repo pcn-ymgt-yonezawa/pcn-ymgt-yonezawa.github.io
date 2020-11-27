@@ -1,0 +1,25 @@
+5 CLS:POKE#1E03,1,34:S="TOMO"
+10 ?"MJ GETS maker.ifttt.com/trigger/test/with/key/bNPh-nYjStOFVXPR1Xo_WvMbP7P9oO-aNqGORpYzVFW?value1=";
+20 FOR I=0 TO LEN(S)-1
+30 ?STR$(S+I,1);
+40 NEXT
+50 ?:LC 0,10:?">";STR$(S):?
+
+1 '100M DASH
+5 CLT
+10 ?CHR$(251);
+15 FOR R=1 TO 30
+17 IF !BTN(32) CONT
+18 IF BTN(32) CONT
+20 ?CHR$(8,46,251);
+30 NEXT
+40 T=TICK()
+50 ?:?T/60;".";T%60/6
+
+60 'MIX JUICE
+65 CLS:POKE#1E03,1,34:S="TOMO"
+70 ?"MJ GETS maker.ifttt.com/trigger/test/with/key/bNPh-nYjStOFVXPR1Xo_WvMbP7P9oO-aNqGORpYzVFW?value1=";
+80 FOR I=0 TO LEN(S)-1
+90 ?STR$(S+I,1);
+100 NEXT
+110 ?:LC 0,10:?">";STR$(S):?

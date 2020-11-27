@@ -1,0 +1,6 @@
+5 CLS:POKE#1E03,1,34:S="TOMO"
+10 ?"MJ GETS maker.ifttt.com/trigger/test/with/key/bNPh-nYjStOFVXPR1Xo_WvMbP7P9oO-aNqGORpYzVFW?value1=";
+20 FOR I=0 TO LEN(S)-1
+30 ?STR$(S+I,1);
+40 NEXT
+50 ?:LC 0,10:?">";STR$(S):?
