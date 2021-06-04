@@ -18,7 +18,8 @@ IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJ
    [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf)をみながら改造して自分だけ かわくだりゲームにしてみよう！
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01.html)
   - [しくみへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/01logic.html)
-<!-- - 【第 2 回】LED を制御していろいろな色のライトをつけてみよう  
+<!--
+- 【第 2 回】LED を制御していろいろな色のライトをつけてみよう  
    [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_02.pdf) 
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/02.html)
   - [はってんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/02adv.html)
@@ -30,7 +31,8 @@ IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJ
    [[スライド(.pdf ファイル) 約 1.5MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_04.pdf) 
   - [プリント](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/04.html)
 - 【第 5 回】プログラミングを利用して水溶液の性質を調べてみよう
-  - [プリント](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/05.html) -->
+  - [プリント](https://online.pcn-ymgt-yonezawa.club/yrc/2020/print/05.html)
+-->
 
 ### リンク
 
