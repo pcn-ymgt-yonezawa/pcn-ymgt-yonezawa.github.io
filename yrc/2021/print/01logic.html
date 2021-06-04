@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>かわくだりゲーム</title>
+<link rel="stylesheet" type="text/css" href="../../../print/ichigojamlist.css">
+<script src="../../../print/ichigojamlist.js"></script>
+</head><body>
+
+<h1>かわくだりゲーム - IchigoDyhook@PCN山形米沢</h1>
+
+<section>
+かわくだりゲームきほん<br>
+<div id="kawakudari-1"></div>
+<script>make15("kawakudari-1", f2s(function() {/*
+10 CLS:CLT:X=16
+20 K=INKEY()
+30 X=X-(K==28)+(K==29)
+40 IF SCR(X,5) ?TICK():END
+50 LC X,5:?"0"
+60 LC RND(32),23:?"*""
+70 WAIT3:GOTO20
+*/}))</script>
+</section>
+<section>
+<b>説明</b><br>
+Xは、自分がどこにいるか表しているよ<br>
+10番目 CLSコマンドは画面をクリア（きれいにするよ）<br>
+      :CLTコマンドは時間をリセットするよ<br>
+      :Xに16を設定するよ<br>
+20番目 Kにキーボードから入力されたキーを設定するよ<br>
+       INKEY()コマンドは、キーボードで入力したキーを表すよ<br>
+30番目 Xの数を計算するよ<br>
+       「←」キーを押すと、Xが-1（左にいどう）されるよ<br>
+       「→」キーを押すと、Xが+1（右にいどう）されるよ<br>
+40番目 もし、てきにあたったら、時間をひょうじ<br>
+       ?コマンドは画面に文字をひょうじするコマンド<br>
+       :ENDコマンドはプログラムを止めるよ。つまり、ゲームオーバー<br>
+50番目 Xの場所に自分をひょうじするよ<br>
+60番目 らんだむな場所にてきをひょうじするよ<br>
+70番目 ちょっと待って、20番にいどうするよ<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
