@@ -7,6 +7,17 @@
 <h1>フルカラーLEDの制御 - IchigoDyhook@PCN山形米沢</h1>
 
 <section>
+  赤・緑・青、プログラムでやってみよう！<br>
+  <div id="fullcolorled-pre"></div>
+  <script>make15("fullcolorled-pre", f2s(function() {/*
+NEW
+10 OUT2,1:WAIT60:OUT2,0
+20 OUT3,1:WAIT60:OUT3,0
+30 OUT4,1:WAIT60:OUT4,0
+40 GOTO10
+*/}))</script>
+
+<section>
 じっけん１．光をまぜてみよう！<br>
 <div id="fullcolorled-1"></div>
 <script>make15("fullcolorled-1", f2s(function() {/*
@@ -86,6 +97,67 @@ NEW
       </tr>
     </table>
   </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <section>
+    <h3>はってん１．ランダムに光らせてみよう</h3>
+    <div id="fullcolorled-3"></div>
+    <script>make15("fullcolorled-3", f2s(function() {/*
+NEW
+10 OUT0
+20 OUT2,RND(2)
+30 OUT3,RND(2)
+40 OUT4,RND(2)
+50 WAIT60
+60 GOTO20
+    */}))</script>
+    <b>かんがえてみよう！</b><br>
+    ・WAITは待つコマンド、60で1秒だよ。60を5にするとどうなるかな？<br>
+    ・RNDコマンドは、0からかっこ内の数字未満のでたらめな整数を返すよ<br>
+    　RND(2)だと、いくつからいくつまでの数字になるかな？
+    </section>
+    
+    <section>
+    <h3>はってん２．だんだん明るくしてみよう</h3>
+    <div id="fullcolorled-4"></div>
+    <script>make15("fullcolorled-4", f2s(function() {/*
+NEW
+10 OUT0
+20 FOR I=0 TO 2000 STEP100
+30 PWM2,I
+40 WAIT10
+50 NEXT
+60 GOTO10
+    */}))</script>
+    <b>かんがえてみよう！</b><br>
+    ・FORコマンドの「I=0 TO 2000」は0～2000まで<br>
+    　「STEP100」は100ずつ大きくなるという意味だよ<br>
+    ・FORとNEXTの間のコマンドを繰り返すよ<br>
+    </section>
+    
+    <section>
+    <h3>はってん３．七色変化！</h3>
+    <b>ちょっと難しいかも！</b><br>
+    <div id="fullcolorled-5"></div>
+    <script>make15("fullcolorled-5", f2s(function() {/*
+NEW
+10 OUT0
+20 X=1950:Y=0:Z=0:
+30 FOR T=0 TO 360 STEP 3
+40  IF T/120=0 X=X-50:Y=Y+50
+50  IF T/120=1 Y=Y-50:Z=Z+50
+60  IF T/120=2 Z=Z-50:X=X+50
+70  PWM2,X:PWM3,Y:PWM4,Z
+80  WAIT5
+90 NEXT
+100 GOTO20
+    */}))</script>
+  </section>
+
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
 <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
