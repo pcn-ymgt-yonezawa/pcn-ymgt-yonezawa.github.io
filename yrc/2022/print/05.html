@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>水溶液の性質を調べてみよう</title>
+  <link rel="stylesheet" type="text/css" href="../../../print/ichigojamlist.css">
+  <script src="../../../print/ichigojamlist.js"></script>
+</head>
+
+<body>
+
+  <h1>水溶液の性質を調べてみよう - IchigoDyhook@PCN山形米沢</h1>
+
+  <section>
+    1.水溶液の性質をセンサーで調べてみよう<br>
+    phセンサーにはセンサーの値のだいたいの値を記入しよう。
+    <div id="as-1"></div>
+    <script>make15("as-1", f2s(function () {/*
+10 A=ANA(2)
+20 ?A:WAIT30
+30 GOTO10
+*/}))</script>
+    <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+      <tr>
+        <th>道具</th>
+        <th width="110px">塩酸<br>（えんさん）</th>
+        <th width="110px">水</th>
+        <th width="110px">水酸化<br>（すいさんか）<br>ナトリウム</th>
+      </tr>
+      <tr>
+        <td>リトマス試験紙赤</td>
+        <td>赤 → </td>
+        <td>赤 → </td>
+        <td>赤 → </td>
+      </tr>
+      <tr>
+        <td>リトマス試験紙青</td>
+        <td>青 → </td>
+        <td>青 → </td>
+        <td>青 → </td>
+      </tr>
+      <tr>
+        <td>pHセンサー</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </section>
+
+  <br>
+  <section>
+    2.未知の液体X,Yを調べてみよう！<br>
+    phセンサーにはセンサーの値のだいたいの値を記入しよう。
+    <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: auto;">
+      <tr>
+        <th>道具/結果</th>
+        <th width="110px">X</th>
+        <th width="110px">Y</th>
+      </tr>
+      <tr>
+        <td>リトマス試験紙赤</td>
+        <td>赤 → </td>
+        <td>赤 → </td>
+      </tr>
+      <tr>
+        <td>リトマス試験紙青</td>
+        <td>青 → </td>
+        <td>青 → </td>
+      </tr>
+      <tr>
+        <td>pHセンサー</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>結果</td>
+        <td align="right">性</td>
+        <td align="right">性</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    3.センサーとフルカラーLEDを組み合わせて<br>デジタルリトマス試験ツールを作ろう！<br>
+    <div id="as-3"></div>
+    <script>make15("as-3", f2s(function () {/*
+5 X=110:OUT0
+10 A=ANA(2)
+20 ?A:WAIT30
+21 IF A>X OUT4,1:OUT2,0
+22 IF A<X OUT2,1:OUT4,0
+30 GOTO10
+*/}))</script>
+  </section>
+
+  <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
+      href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+    <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+
+</html>
