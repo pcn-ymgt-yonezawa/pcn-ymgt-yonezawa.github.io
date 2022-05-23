@@ -15,7 +15,7 @@ YRC（山形市理科教育センター）のページとなります。
 IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJam/)でプログラミングできるよ！  
 
 - 【第 1 回】プログラミングの基礎を学ぼう  
-   <!-- [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2020/slides/2020PKC_01.pdf)をみながら改造して自分だけ かわくだりゲームにしてみよう！ -->
+   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2022/slides/2022PKC_01.pdf)をみながら改造して自分だけ かわくだりゲームにしてみよう！
   - [きほんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2022/print/01.html)
   - [しくみへん](https://online.pcn-ymgt-yonezawa.club/yrc/2022/print/01logic.html)
 
