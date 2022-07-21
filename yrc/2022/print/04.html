@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>カムロボ自動運転</title>
+    <link rel="stylesheet" type="text/css" href="../../../print/ichigojamlist.css">
+    <script src="../../../print/ichigojamlist.js"></script>
+</head>
+
+<body>
+
+    <h1>カムロボ自動運転 - IchigoDyhook@PCN山形米沢</h1>
+
+    <section>
+        センサーを使ってカムロボを自動運転。まずは、まっすぐすすむ<br>
+        <div id="kamurobo-1"></div>
+        <script>make15("kamurobo-1", f2s(function () {/*
+NEW
+10 OUT33
+60 GOTO10
+RUN
+*/}))</script>
+    </section>
+
+    <section>
+        カベにぶつかりそうになったらとまる<br>
+        <div id="kamurobo-2"></div>
+        <script>make15("kamurobo-2", f2s(function () {/*
+10 OUT33:A=ANA(2)
+20 IF A<600 GOTO10
+30 BEEP50,30:OUT0
+*/}))</script>
+        ※ () は[Shift]をおしながら「9」と「0」<br>
+    </section>
+
+    <section>
+        とまったらすこしバックする
+        <div id="kamurobo-3"></div>
+        <script>make15("kamurobo-3", f2s(function () {/*
+40 OUT18:WAIT60
+*/}))</script>
+    </section>
+
+    <section>
+        バックしたらほうこうてんかん（左にちょっかくにまがる）
+        <div id="kamurobo-4"></div>
+        <script>make15("kamurobo-4", f2s(function () {/*
+50 OUT34:WAIT55
+*/}))</script>
+    </section>
+
+    <section>
+        スタートのあいずを入れよう
+        <div id="kamurobo-5"></div>
+        <script>make15("kamurobo-5", f2s(function () {/*
+5 WAIT120:BEEP10,20
+*/}))</script>
+    </section>
+
+    <section>
+        <b>やってみよう！</b><br>
+        1. カベにぶつかりそうになった後の動きをかえてみよう<br>
+        2. カベにぶつかるかどうかのはんていじょうけんをかえてみよう（ギリギリにちょうせん！？）<br>
+    </section>
+
+    <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a
+            href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+        <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a>
+    </div>
+</body>
+
+</html>
