@@ -21,9 +21,9 @@ IchigoDyhook がなくても、[IchigoJam web](https://fukuno.jig.jp/app/IchigoJ
 - 【第 2 回】LED を制御していろいろな色のライトをつけてみよう  
    [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2022/slides/2022PKC_02.pdf) 
   - [きほんへん&はってんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2022/print/02.html)
-  - 【第 3 回】ロボットを制御してみよう①  
-   [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2022/slides/2022PKC_03.pdf) 
-  - [きほんへん&はってんへん](https://online.pcn-ymgt-yonezawa.club/yrc/2022/print/03.html)
+- 【第 3 回】ロボットを制御してみよう①  
+  [[スライド(.pdf ファイル) 約 2MB]](https://online.pcn-ymgt-yonezawa.club/yrc/2022/slides/2022PKC_03.pdf) 
+  - [プリント](https://online.pcn-ymgt-yonezawa.club/yrc/2022/print/03.html)
 
 
 ### リンク
